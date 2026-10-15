@@ -1,6 +1,13 @@
 /*
- * The music of Queen and Kris Kristofferson have seen an unlikely resurgence.
- * As an unintended consequence, films starting with the letters K and Q have also soared in popularity.
- * Use a JOIN to display the titles of movies starting with the letters K and Q whose language is English.
- * Use tables film and language, and order the results alphabetically by film title.
+ * Display the titles of movies starting with the letters K and Q whose language is English.
  */
+SELECT f.film_id,
+       f.title,
+       l.language_id,
+       l.name
+FROM film AS f
+JOIN language AS l
+  ON l.language_id = f.language_id
+WHERE l.name = 'English'
+  AND (f.title ILIKE 'k%' OR f.title ILIKE 'q%')
+ORDER BY f.title;
