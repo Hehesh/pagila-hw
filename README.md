@@ -1,5 +1,5 @@
 # pagila-hw
-[![](https://github.com/Hehesh/pagila-hw/actions/workflows/tests.yml/badge.svg)](https://github.com/Hehesh/pagila-hw/actions?query=workflow%3Atests)
+![SQL Tests](https://github.com/Hehesh/pagila-hw/actions/workflows/tests.yml/badge.svg?branch=dic-sql-implementation)
 
 ## Background
 
